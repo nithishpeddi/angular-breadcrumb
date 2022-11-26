@@ -1,0 +1,11 @@
+.page1link {
+  color: darkgreen;
+  background-color: lightgreen;
+  text-align: center;
+
+  &:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,14 @@
+<ol id="breadcrumbNav" class="breadcrumb-nav">
+  <li *ngFor="let breadcrumb of breadcrumbs$ | async; let i = index">
+    <a *ngIf="i != (breadcrumbs$ | async)?.length - 1" [href]="breadcrumb.url"
+      >{{ breadcrumb.label }}
+    </a>
+
+    <!-- {{ breadcrumb | json }} -->
+    <span
+      class="breadcrumb-last-li"
+      *ngIf="i == (breadcrumbs$ | async)?.length - 1"
+      >{{ breadcrumb.label }}
+    </span>
+  </li>
+</ol>

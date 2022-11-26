@@ -1,0 +1,11 @@
+.page2link {
+  color: darkred;
+  background-color: lightpink;
+  text-align: center;
+
+  &:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
